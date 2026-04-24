@@ -53,7 +53,7 @@ const {value: balance} = await rpc.getBalance(wallet.address).send();
 const balanceInSol = Number(balance)/1_000_000_000;
 
 
-console.log(`Address: {wallet.address}`);
+console.log(`Address: ${wallet.address}`);
 console.log(`Balance: ${balanceInSol} SOL`);
 
 if (balanceInSol === 0) {
